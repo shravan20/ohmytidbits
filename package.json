@@ -1,0 +1,25 @@
+{
+  "name": "personal-wiki",
+  "version": "1.0.0",
+  "description": "everything i know",
+  "main": "\"\"",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shravan20/personal-wiki.git"
+  },
+  "author": "@shravan20",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shravan20/personal-wiki/issues"
+  },
+  "homepage": "https://github.com/shravan20/personal-wiki#readme",
+  "devDependencies": {
+    "vitepress": "^1.6.3"
+  }
+}

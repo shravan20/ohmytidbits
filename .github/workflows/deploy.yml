@@ -47,6 +47,14 @@ jobs:
         run: npm ci # or pnpm install / yarn install / bun install
       - name: Build with VitePress
         run: npm run docs:build # or pnpm docs:build / yarn docs:build / bun run docs:build
+
+      - name: debug show where dist landed
+        run: |
+          echo "=== all folders ==="
+          ls -R .
+          echo "=== site output dirs ==="
+          ls -la docs/.vitepress  || ls -la .vitepress || true
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

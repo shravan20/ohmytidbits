@@ -4,22 +4,30 @@ export default defineConfig({
   title: 'ohmytidbits',
   description: 'everything I know and learn',
 
-  // Site meta
   head: [
+    // Favicon
     ['link', { rel: 'icon', href: '/favicon.ico' }],
-    ['meta', { name: 'theme-color', content: '#3eaf7c' }]
+    // Mobile theme color
+    ['meta', { name: 'theme-color', content: '#1e2024' }],
+    // Font preload
+    ['link', { rel: 'preload', href: '/fonts/Inter-VariableFont_slnt,wght.ttf', as: 'font', type: 'font/ttf', crossorigin: true }]
   ],
 
-  // Enable dark/light mode
-  appearance: true,
-
-  // Last updated timestamp
-  lastUpdated: true,
+  appearance: true,      // enable dark/light
+  lastUpdated: true,     // file last updated timestamp
+  cleanUrls: 'without-subfolders',
+  markdown: {
+    lineNumbers: true
+  },
 
   themeConfig: {
     logo: '/logo.svg',
+    // Announcement bar (top-level hook)
+    announcement: {
+      id: 'new-feature',
+      content: '🎉 Check out the new “Quick Tips” panel—hover the lightbulb icon on any page!'
+    },
 
-    // Top navigation
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Guides', link: '/guides/' },
@@ -28,16 +36,17 @@ export default defineConfig({
         text: 'More',
         items: [
           { text: 'Changelog', link: '/changelog' },
+          { text: 'Roadmap', link: '/roadmap' },
           { text: 'About', link: '/about' }
         ]
       }
     ],
 
-    // Sidebar grouped by section
     sidebar: {
       '/guides/': [
         {
           text: 'Getting Started',
+          collapsible: false,
           items: [
             { text: 'Installation', link: '/guides/installation' },
             { text: 'Configuration', link: '/guides/configuration' }
@@ -45,6 +54,7 @@ export default defineConfig({
         },
         {
           text: 'Advanced',
+          collapsible: true,
           items: [
             { text: 'Theming', link: '/guides/theming' },
             { text: 'Plugins', link: '/guides/plugins' }
@@ -71,13 +81,13 @@ export default defineConfig({
       ]
     },
 
-    // “Edit this page” links
+    // “Edit this page” link
     editLink: {
-      pattern: 'https://github.com/your-username/ohmytidbits/edit/main/docs/:path',
-      text: 'Edit this page on GitHub'
+      pattern: 'https://github.com/shravan20/ohmytidbits/edit/main/docs/:path',
+      text: '✏️ Edit on GitHub'
     },
 
-    // Algolia search
+    // Algolia Search
     search: {
       provider: 'algolia',
       options: {
@@ -87,19 +97,39 @@ export default defineConfig({
       }
     },
 
-    // Footer with copyright
-    footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2023–2025 Your Name'
-    },
-
-    // Social links
     socialLinks: [
       { icon: 'github', link: 'https://github.com/shravan20/ohmytidbits' },
       { icon: 'twitter', link: 'https://x.com/shravan20' }
     ],
 
-    // Table of contents depth
-    outline: [2, 3]
+    // Footer with minimal copyright
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: '© 2023–2025 OhMyTidbits'
+    },
+
+    outline: {
+      level: [2, 3],
+      label: 'On this page'
+    },
+
+    // Back to top button
+    backToTop: true,
+
+    // Doc footer navigation
+    docFooter: {
+      prev: '⬅️ Previous',
+      next: 'Next ➡️'
+    },
+
+    // Custom “hooks” slot keys you can pick up in your theme
+    hooks: {
+      onPageRender: (page) => {
+        // e.g. inject a “feedback” widget or lightbulb icon
+      },
+      onSiteDataLoaded: (siteData) => {
+        // e.g. dynamically adjust sidebar depth
+      }
+    }
   }
 })

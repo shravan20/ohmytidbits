@@ -1,5 +1,5 @@
 {
-  "name": "tidbits",
+  "name": "ohmytidbits",
   "version": "1.0.0",
   "description": "everything i know",
   "main": "\"\"",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shravan20/tidbits.git"
+    "url": "git+https://github.com/shravan20/ohmytidbits.git"
   },
   "author": "@shravan20",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shravan20/tidbits/issues"
+    "url": "https://github.com/shravan20/ohmytidbits/issues"
   },
-  "homepage": "https://github.com/shravan20/tidbits#readme",
+  "homepage": "https://github.com/shravan20/ohmytidbits#readme",
   "devDependencies": {
     "vitepress": "^1.6.3"
   }

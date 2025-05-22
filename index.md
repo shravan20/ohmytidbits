@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "tidbits"
+  name: "ohmytidbits"
   text: "everything i know and learn"
   tagline: My great project tagline
   actions:

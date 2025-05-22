@@ -10,7 +10,7 @@ export default defineConfig({
     // Mobile theme color
     ['meta', { name: 'theme-color', content: '#1e2024' }],
     // Font preload
-    ['link', { rel: 'preload', href: '/fonts/Inter-VariableFont_slnt,wght.ttf', as: 'font', type: 'font/ttf', crossorigin: true }]
+    ['link', { rel: 'preload', href: '/fonts/Inter-VariableFont_slnt,wght.ttf', as: 'font', type: 'font/ttf', crossorigin: "" }]
   ],
 
   appearance: true,      // enable dark/light

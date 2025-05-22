@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "personal-wiki"
+  name: "tidbits"
   text: "everything i know and learn"
   tagline: My great project tagline
   actions:

@@ -1,5 +1,5 @@
 {
-  "name": "personal-wiki",
+  "name": "tidbits",
   "version": "1.0.0",
   "description": "everything i know",
   "main": "\"\"",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shravan20/personal-wiki.git"
+    "url": "git+https://github.com/shravan20/tidbits.git"
   },
   "author": "@shravan20",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shravan20/personal-wiki/issues"
+    "url": "https://github.com/shravan20/tidbits/issues"
   },
-  "homepage": "https://github.com/shravan20/personal-wiki#readme",
+  "homepage": "https://github.com/shravan20/tidbits#readme",
   "devDependencies": {
     "vitepress": "^1.6.3"
   }

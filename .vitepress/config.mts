@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "personal-wiki",
+  title: "tidbits",
   description: "everything i know and learn",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config

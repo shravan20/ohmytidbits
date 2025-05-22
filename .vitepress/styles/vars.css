@@ -1,0 +1,53 @@
+:root {
+    --vp-c-bg: #1e1e2e;
+    --vp-c-font-base: #e0e0e0;
+    --vp-c-brand: #ff6ec4;
+    --vp-c-link: #42a5f5;
+    --vp-c-link-hover: #82cfff;
+    --vp-c-pre-border: #ff6ec4;
+    --vp-c-code-bg: #2a2a3c;
+    --vp-c-code-border: #42a5f5;
+}
+
+.vp-nav-bar {
+    background: linear-gradient(90deg, #ff6ec4, #7367f0);
+}
+
+.vp-doc {
+    background-color: var(--vp-c-bg);
+    color: var(--vp-c-font-base);
+}
+
+.vp-sidebar a {
+    color: var(--vp-c-font-base);
+}
+
+.vp-sidebar a.router-link-active {
+    background-color: rgba(66, 165, 245, 0.1);
+    border-left: 3px solid var(--vp-c-brand);
+}
+
+.vp-code {
+    background-color: var(--vp-c-code-bg);
+    border: 1px solid var(--vp-c-code-border);
+}
+
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3 {
+    color: #ffffff;
+    scroll-margin-top: 2rem;
+}
+
+a {
+    color: var(--vp-c-link);
+}
+
+a:hover {
+    color: var(--vp-c-link-hover);
+}
+
+.vp-footer {
+    background-color: #2a2a3c;
+    color: var(--vp-c-font-base);
+}

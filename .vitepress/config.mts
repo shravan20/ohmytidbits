@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: 'ohmytidbits',
-  description: 'everything I know and learn',
+  description: 'everything I know & learn',
 
   head: [
     // Favicon

@@ -15,7 +15,7 @@ export default defineConfig({
 
   appearance: true,      // enable dark/light
   lastUpdated: true,     // file last updated timestamp
-  cleanUrls: 'without-subfolders',
+  cleanUrls: true,
   markdown: {
     lineNumbers: true
   },

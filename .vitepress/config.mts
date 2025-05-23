@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Oh My Tidbits",
   description: "Everything I know and learn",
-  base: '/ohmytidbits/',  // Use root path for local testing - change to '/ohmytidbits/' for GitHub Pages
+  base: '/',  // Use root path for local testing - change to '/ohmytidbits/' for GitHub Pages
   cleanUrls: true,
   appearance: 'dark',
   lastUpdated: true,

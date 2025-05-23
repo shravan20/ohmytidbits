@@ -53,7 +53,6 @@ jobs:
           ls -R .
           echo "=== site output dirs ==="
           ls -la docs/.vitepress  || ls -la .vitepress || true
-          echo "wiki.ohmyscript.com" > docs/CNAME
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

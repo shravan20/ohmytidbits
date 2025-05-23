@@ -29,7 +29,10 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Programming', link: '/programming/' },
       { text: 'Learning Notes', link: '/notes/' },
-      { text: 'Resources', link: '/resources/' }
+      { text: 'Blog', link: '/blogs/' },
+      {
+        text: 'Resources', link: '/resources/'
+      }
     ],
 
     sidebar: {

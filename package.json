@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "description": "everything i know",
   "main": "\"\"",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "node scripts/fetch-blogs.js",
     "docs:preview": "vitepress preview",
     "docs:dev": "vitepress dev .",
-    "docs:build": "NODE_ENV=production vitepress build .",
+    "docs:build": "npm run generate && NODE_ENV=production vitepress build .",
     "docs:build-local": "vitepress build .",
     "docs:serve": "vitepress serve .vitepress/dist"
   },
@@ -27,6 +29,7 @@
   },
   "dependencies": {
     "@algolia/autocomplete-js": "^1.19.2",
-    "algoliasearch": "^5.25.0"
+    "algoliasearch": "^5.25.0",
+    "node-fetch": "^3.3.2"
   }
 }

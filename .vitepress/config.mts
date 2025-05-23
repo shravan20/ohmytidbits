@@ -76,7 +76,7 @@ export default defineConfig({
 
     footer: {
       message: 'Released under the MIT License.',
-      copyright: '© 2024 Personal Knowledge Wiki'
+      copyright: '© 2024 OhMyTidbits'
     },
 
     outline: {

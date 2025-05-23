@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: "Personal Knowledge Wiki"
+  name: "Personal Knowledge Base"
   text: "Everything I Know & Learn"
   tagline: A curated collection of my learning journey, notes, and discoveries
   actions:

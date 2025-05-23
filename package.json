@@ -24,5 +24,9 @@
   "devDependencies": {
     "@types/node": "^22.15.21",
     "vitepress": "^1.6.3"
+  },
+  "dependencies": {
+    "@algolia/autocomplete-js": "^1.19.2",
+    "algoliasearch": "^5.25.0"
   }
 }

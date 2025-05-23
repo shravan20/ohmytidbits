@@ -1,53 +1,460 @@
 :root {
-    --vp-c-bg: #1e1e2e;
-    --vp-c-font-base: #e0e0e0;
-    --vp-c-brand: #ff6ec4;
-    --vp-c-link: #42a5f5;
-    --vp-c-link-hover: #82cfff;
-    --vp-c-pre-border: #ff6ec4;
-    --vp-c-code-bg: #2a2a3c;
-    --vp-c-code-border: #42a5f5;
+    /* Base colors - Gruvbox Light Hard as default */
+    --vp-c-bg: #f9f5d7;
+    --vp-c-bg-alt: #f2e5bc;
+    --vp-c-bg-soft: #ebdbb2;
+    --vp-c-bg-mute: #d5c4a1;
+
+    /* Text colors - Gruvbox dark colors */
+    --vp-c-text-1: #3c3836;
+    --vp-c-text-2: #504945;
+    --vp-c-text-3: #665c54;
+
+    /* Brand colors - Gruvbox blue/aqua accent */
+    --vp-c-brand: #076678;
+    --vp-c-brand-light: #458588;
+    --vp-c-brand-lighter: #83a598;
+    --vp-c-brand-dark: #0d3a49;
+    --vp-c-brand-darker: #142d3a;
+
+    /* Link colors */
+    --vp-c-link: #076678;
+    --vp-c-link-hover: #458588;
+
+    /* Border colors - Gruvbox neutral tones */
+    --vp-c-border: #d5c4a1;
+    --vp-c-divider: #ebdbb2;
+    --vp-c-gutter: #f2e5bc;
+
+    /* Code block colors */
+    --vp-c-code-bg: #f2e5bc;
+    --vp-code-bg: var(--vp-c-code-bg);
+    --vp-c-code-border: #d5c4a1;
+    --vp-code-color: #3c3836;
+
+    /* Component specific */
+    --vp-c-default-1: var(--vp-c-text-1);
+    --vp-c-default-2: var(--vp-c-text-2);
+    --vp-c-default-3: var(--vp-c-text-3);
+    --vp-c-default-soft: var(--vp-c-bg-soft);
+
+    /* Button colors */
+    --vp-button-brand-border: var(--vp-c-brand);
+    --vp-button-brand-text: #f9f5d7;
+    --vp-button-brand-bg: var(--vp-c-brand);
+    --vp-button-brand-hover-border: var(--vp-c-brand-light);
+    --vp-button-brand-hover-text: #f9f5d7;
+    --vp-button-brand-hover-bg: var(--vp-c-brand-light);
+    --vp-button-brand-active-border: var(--vp-c-brand-dark);
+    --vp-button-brand-active-text: #f9f5d7;
+    --vp-button-brand-active-bg: var(--vp-c-brand-dark);
 }
 
-.vp-nav-bar {
-    background: linear-gradient(90deg, #ff6ec4, #7367f0);
+/* Dark theme - Dark mode variant */
+.dark {
+    /* Base colors - Dark mode */
+    --vp-c-bg: #0f0f0f;
+    --vp-c-bg-alt: #111111;
+    --vp-c-bg-soft: #1a1a1a;
+    --vp-c-bg-mute: #1f1f1f;
+
+    /* Text colors - Clean grayscale */
+    --vp-c-text-1: #ffffff;
+    --vp-c-text-2: #a0a0a0;
+    --vp-c-text-3: #707070;
+
+    /* Brand colors - Single accent */
+    --vp-c-brand: #00d4ff;
+    --vp-c-brand-light: #33ddff;
+    --vp-c-brand-lighter: #66e6ff;
+    --vp-c-brand-dark: #00b8e6;
+    --vp-c-brand-darker: #009ccc;
+
+    /* Link colors */
+    --vp-c-link: #00d4ff;
+    --vp-c-link-hover: #33ddff;
+
+    /* Border colors */
+    --vp-c-border: #2a2a2a;
+    --vp-c-divider: #1a1a1a;
+    --vp-c-gutter: #1f1f1f;
+
+    /* Code block colors */
+    --vp-c-code-bg: #1a1a1a;
+    --vp-code-bg: var(--vp-c-code-bg);
+    --vp-c-code-border: #2a2a2a;
+    --vp-code-color: #ffffff;
+
+    /* Component specific */
+    --vp-c-default-1: var(--vp-c-text-1);
+    --vp-c-default-2: var(--vp-c-text-2);
+    --vp-c-default-3: var(--vp-c-text-3);
+    --vp-c-default-soft: var(--vp-c-bg-soft);
+
+    /* Button colors */
+    --vp-button-brand-border: var(--vp-c-brand);
+    --vp-button-brand-text: #0f0f0f;
+    --vp-button-brand-bg: var(--vp-c-brand);
+    --vp-button-brand-hover-border: var(--vp-c-brand-light);
+    --vp-button-brand-hover-text: #0f0f0f;
+    --vp-button-brand-hover-bg: var(--vp-c-brand-light);
+    --vp-button-brand-active-border: var(--vp-c-brand-dark);
+    --vp-button-brand-active-text: #0f0f0f;
+    --vp-button-brand-active-bg: var(--vp-c-brand-dark);
 }
 
-.vp-doc {
+/* Navigation bar - Gruvbox Glass Effect */
+.VPNav .VPNavBar {
+    background: rgba(249, 245, 215, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: none;
+    border-bottom: 1px solid rgba(213, 196, 161, 0.3);
+    box-shadow: none;
+}
+
+/* Dark mode navigation adjustments */
+.dark .VPNav .VPNavBar {
+    background: rgba(15, 15, 15, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Clean title */
+.VPNavBar .title,
+.VPNavBar .title:hover {
+    color: #3c3836 !important;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.dark .VPNavBar .title,
+.dark .VPNavBar .title:hover {
+    color: #ffffff !important;
+}
+
+.VPNavBar .title:hover {
+    color: var(--vp-c-brand) !important;
+}
+
+/* Minimal navigation links */
+.VPNavBar .VPNavBarMenuLink {
+    color: rgba(60, 56, 54, 0.7) !important;
+    transition: color 0.2s ease;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-weight: 400;
+}
+
+.dark .VPNavBar .VPNavBarMenuLink {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.VPNavBar .VPNavBarMenuLink:hover {
+    color: #3c3836 !important;
+    background: rgba(60, 56, 54, 0.05);
+}
+
+.dark .VPNavBar .VPNavBarMenuLink:hover {
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Active state - single accent */
+.VPNavBar .VPNavBarMenuLink.active {
+    color: var(--vp-c-brand) !important;
+    background: none;
+    border: none;
+}
+
+/* Simple hamburger */
+.VPNavBar .VPNavBarHamburger {
+    background: rgba(60, 56, 54, 0.05);
+    border: none;
+    border-radius: 6px;
+    transition: background 0.2s ease;
+}
+
+.dark .VPNavBar .VPNavBarHamburger {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.VPNavBar .VPNavBarHamburger:hover {
+    background: rgba(60, 56, 54, 0.1);
+}
+
+.dark .VPNavBar .VPNavBarHamburger:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Main layout */
+.Layout,
+.VPContent {
     background-color: var(--vp-c-bg);
-    color: var(--vp-c-font-base);
+    color: var(--vp-c-text-1);
 }
 
-.vp-sidebar a {
-    color: var(--vp-c-font-base);
+.VPDoc {
+    background-color: var(--vp-c-bg);
+    color: var(--vp-c-text-1);
 }
 
-.vp-sidebar a.router-link-active {
-    background-color: rgba(66, 165, 245, 0.1);
-    border-left: 3px solid var(--vp-c-brand);
+/* Sidebar - Gruvbox Glass */
+.VPSidebar {
+    background: rgba(249, 245, 215, 0.7);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-right: 1px solid rgba(213, 196, 161, 0.3);
 }
 
-.vp-code {
-    background-color: var(--vp-c-code-bg);
+.dark .VPSidebar {
+    background: rgba(15, 15, 15, 0.4);
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.VPSidebarItem a {
+    color: var(--vp-c-text-2);
+    transition: color 0.2s ease;
+    border-radius: 4px;
+}
+
+.VPSidebarItem a:hover {
+    color: var(--vp-c-text-1);
+    background: rgba(60, 56, 54, 0.03);
+}
+
+.dark .VPSidebarItem a:hover {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.VPSidebarItem.is-active>.item>.link {
+    color: var(--vp-c-brand) !important;
+    background: none;
+    border-left: 2px solid var(--vp-c-brand);
+}
+
+/* Code blocks */
+.vp-code-group,
+div[class*="language-"] {
+    background-color: var(--vp-c-code-bg) !important;
     border: 1px solid var(--vp-c-code-border);
+    border-radius: 8px;
+    margin: 16px 0;
 }
 
-.vp-doc h1,
-.vp-doc h2,
-.vp-doc h3 {
-    color: #ffffff;
+.vp-code-group .tabs {
+    background-color: var(--vp-c-bg-soft);
+    border-bottom: 1px solid var(--vp-c-border);
+}
+
+pre code {
+    background-color: transparent !important;
+    color: var(--vp-code-color) !important;
+}
+
+/* Inline code */
+code {
+    background-color: var(--vp-c-code-bg);
+    color: var(--vp-c-brand);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.875em;
+}
+
+/* Headings */
+.VPDoc h1,
+.VPDoc h2,
+.VPDoc h3,
+.VPDoc h4,
+.VPDoc h5,
+.VPDoc h6 {
+    color: #3c3836;
     scroll-margin-top: 2rem;
+    border-bottom: none;
 }
 
+.dark .VPDoc h1,
+.dark .VPDoc h2,
+.dark .VPDoc h3,
+.dark .VPDoc h4,
+.dark .VPDoc h5,
+.dark .VPDoc h6 {
+    color: #ffffff;
+}
+
+.VPDoc h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.VPDoc h2 {
+    border-top: 1px solid var(--vp-c-divider);
+    padding-top: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* Links */
 a {
     color: var(--vp-c-link);
+    text-decoration: none;
+    transition: color 0.25s ease;
 }
 
 a:hover {
     color: var(--vp-c-link-hover);
+    text-decoration: underline;
 }
 
-.vp-footer {
-    background-color: #2a2a3c;
-    color: var(--vp-c-font-base);
+/* Footer */
+.VPFooter {
+    background-color: var(--vp-c-bg-soft);
+    color: var(--vp-c-text-2);
+    border-top: 1px solid var(--vp-c-border);
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+th,
+td {
+    border: 1px solid var(--vp-c-border);
+    padding: 8px 12px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--vp-c-bg-soft);
+    color: var(--vp-c-text-1);
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(60, 56, 54, 0.02);
+}
+
+.dark tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+/* Blockquotes */
+blockquote {
+    border-left: 4px solid var(--vp-c-brand);
+    background-color: var(--vp-c-bg-soft);
+    padding: 12px 16px;
+    margin: 16px 0;
+    border-radius: 0 4px 4px 0;
+}
+
+blockquote p {
+    margin: 0;
+    color: var(--vp-c-text-2);
+}
+
+/* Search - Gruvbox Glass */
+.VPNavBarSearch .DocSearch-Button {
+    background: rgba(60, 56, 54, 0.03);
+    border: 1px solid rgba(213, 196, 161, 0.3);
+    color: rgba(60, 56, 54, 0.7);
+    border-radius: 6px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: all 0.2s ease;
+    box-shadow: none;
+}
+
+.dark .VPNavBarSearch .DocSearch-Button {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.VPNavBarSearch .DocSearch-Button:hover {
+    background: rgba(60, 56, 54, 0.08);
+    border-color: rgba(213, 196, 161, 0.5);
+    color: #3c3836;
+}
+
+.dark .VPNavBarSearch .DocSearch-Button:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+.VPNavBarSearch .DocSearch-Button .DocSearch-Search-Icon {
+    color: var(--vp-c-brand);
+}
+
+/* Custom containers */
+.custom-block {
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+.custom-block.tip {
+    background-color: rgba(7, 102, 120, 0.1);
+    border-left: 4px solid var(--vp-c-link);
+}
+
+.custom-block.warning {
+    background-color: rgba(214, 153, 32, 0.1);
+    border-left: 4px solid #d65d0e;
+}
+
+.custom-block.danger {
+    background-color: rgba(204, 36, 29, 0.1);
+    border-left: 4px solid #cc241d;
+}
+
+/* Mobile responsive fixes */
+@media (max-width: 768px) {
+    .VPNav .VPNavBar {
+        background: rgba(249, 245, 215, 0.9);
+        backdrop-filter: blur(20px) saturate(180%);
+        -webkit-backdrop-filter: blur(20px) saturate(180%);
+        border-bottom: 1px solid rgba(7, 102, 120, 0.2);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .dark .VPNav .VPNavBar {
+        background: rgba(15, 15, 15, 0.5);
+        border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .VPSidebar {
+        background: rgba(249, 245, 215, 0.95);
+        backdrop-filter: blur(20px) saturate(150%);
+        -webkit-backdrop-filter: blur(20px) saturate(150%);
+        border-right: 1px solid rgba(213, 196, 161, 0.3);
+    }
+
+    .dark .VPSidebar {
+        background: rgba(15, 15, 15, 0.8);
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* Mobile nav menu */
+    .VPNavBarMenu {
+        background: rgba(249, 245, 215, 0.98);
+        backdrop-filter: blur(20px) saturate(180%);
+        -webkit-backdrop-filter: blur(20px) saturate(180%);
+        border: 1px solid rgba(213, 196, 161, 0.3);
+        border-radius: 12px;
+        margin-top: 8px;
+        box-shadow:
+            0 8px 32px rgba(0, 0, 0, 0.1),
+            inset 0 1px 0 rgba(0, 0, 0, 0.05);
+    }
+
+    .dark .VPNavBarMenu {
+        background: rgba(15, 15, 15, 0.9);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow:
+            0 8px 32px rgba(0, 0, 0, 0.2),
+            inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
 }

@@ -10,7 +10,7 @@ export default defineConfig({
   markdown: {
     lineNumbers: true,
     theme: {
-      light: 'github-light',
+      light: 'everforest-light',
       dark: 'github-dark'
     }
   },

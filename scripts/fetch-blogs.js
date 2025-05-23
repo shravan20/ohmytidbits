@@ -5,7 +5,7 @@ import fetch from 'node-fetch'
 // Configuration flags
 const CONFIG = {
     // Set to true to add blog posts to VitePress sidebar navigation
-    ADD_TO_SIDEBAR: true,
+    ADD_TO_SIDEBAR: false,
 
     // Set to true to add blog posts to top navigation dropdown
     ADD_TO_NAV: false

@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "docs:preview": "vitepress preview",
     "docs:dev": "vitepress dev .",
-    "docs:build": "NODE_ENV=production vitepress build docs --outDir .vitepress/dist",
+    "docs:build": "NODE_ENV=production vitepress build .",
     "docs:build-local": "vitepress build .",
     "docs:serve": "vitepress serve .vitepress/dist"
   },

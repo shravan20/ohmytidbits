@@ -1,13 +1,13 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: "Personal Knowledge Wiki",
+  title: "Oh My Tidbits",
   description: "Everything I know and learn",
-  base: '/personal-wiki/',  // GitHub Pages repository name
+  base: '/ohmytidbits/',  // Use root path for local testing - change to '/ohmytidbits/' for GitHub Pages
   cleanUrls: true,
   appearance: 'dark',
   lastUpdated: true,
-  markdown: { 
+  markdown: {
     lineNumbers: true,
     theme: {
       light: 'github-light',
@@ -16,22 +16,22 @@ export default defineConfig({
   },
 
   head: [
-    ['link', { rel: 'icon', href: '/personal-wiki/favicon.ico' }],
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['meta', { name: 'theme-color', content: '#1e2024' }],
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }]
   ],
 
   themeConfig: {
     logo: '/logo.svg',
-    siteTitle: 'Knowledge Wiki',
-    
+    siteTitle: 'Oh My Tidbits',
+
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Programming', link: '/programming/' },
       { text: 'Learning Notes', link: '/notes/' },
       { text: 'Resources', link: '/resources/' }
     ],
-    
+
     sidebar: {
       '/': [
         {
@@ -68,28 +68,28 @@ export default defineConfig({
         }
       ]
     },
-    
+
     editLink: {
-      pattern: 'https://github.com/shravan20/personal-wiki/edit/main/:path',
+      pattern: 'https://github.com/shravan20/ohmytidbits/edit/main/:path',
       text: '✏️ Edit this page'
     },
-    
+
     footer: {
       message: 'Released under the MIT License.',
       copyright: '© 2024 Personal Knowledge Wiki'
     },
-    
-    outline: { 
-      level: [2, 3], 
-      label: 'On this page' 
+
+    outline: {
+      level: [2, 3],
+      label: 'On this page'
     },
-    
+
     search: {
       provider: 'local'
     },
-    
+
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/shravan20/personal-wiki' }
+      { icon: 'github', link: 'https://github.com/shravan20/ohmytidbits' }
     ]
   }
 })

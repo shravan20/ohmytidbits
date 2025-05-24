@@ -31,7 +31,7 @@ Welcome to my living knowledge base - a space for every idea & discovery I make 
 
 **Oh My Tidbits** is a public workspace for ideas in progress; a living digital garden of interlinked notes.  
 
-I see writing as a way to think—each note helps me untangle ideas, ignite fresh connections, and deepen my understanding.
+I see writing as a way to think; each note helps me untangle ideas, ignite fresh connections, and deepen my understanding.
 So each tidbit evolves over time as concepts are tested, challenged, and refined. You’ll find a living web of linked tidbits here, each unfolding at its own pace. Don’t mind the occasional misstep, garden grows strongest by questioning assumptions and refining mental models
 
 - Jump in via the search bar (⌘ K)  
@@ -58,7 +58,10 @@ Each page follows a consistent layout:
 
 The sidebar lists sections alphabetically and reveals nested topics on hover.
 
-## 🌱 Join the Conversation
+## 🌱 Digital Garden Philosophy
+
+Unlike traditional blogs, this digital garden grows organically. Ideas are planted as seeds, cultivated over time, and connected to form a living knowledge ecosystem. Each note is a work in progress, evolving with new insights and connections.
 
 I update this garden every day.
+
 Connect with the [DigitalGardens community](https://reddit.com/r/digitalgardens) for tips, or fork and contribute on GitHub!

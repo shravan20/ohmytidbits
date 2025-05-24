@@ -16,13 +16,13 @@ export default defineConfig({
   },
 
   head: [
-    ['link', { rel: 'icon', href: '/assets/logo.png' }],
+    ['link', { rel: 'icon', href: process.env.NODE_ENV == "development" ? '/assets/logo.png' : 'assets/logo.png' }],
     ['meta', { name: 'theme-color', content: '#1e2024' }],
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }]
   ],
 
   themeConfig: {
-    logo: '/assets/logo.png',
+    logo: process.env.NODE_ENV == "development" ? '/assets/logo.png' : 'assets/logo.png',
     siteTitle: 'Oh My Tidbits',
 
     nav: [

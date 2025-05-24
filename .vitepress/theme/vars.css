@@ -458,3 +458,29 @@ blockquote p {
             inset 0 1px 0 rgba(255, 255, 255, 0.1);
     }
 }
+
+/* Logo styling - Increased size */
+.VPNavBar .logo {
+    width: 48px !important;
+    height: 48px !important;
+    transition: transform 0.2s ease;
+}
+
+.VPNavBar .logo:hover {
+    transform: scale(1.05);
+}
+
+/* Ensure logo container has enough space */
+.VPNavBar .VPNavBarTitle {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Mobile responsive logo sizing */
+@media (max-width: 768px) {
+    .VPNavBar .logo {
+        width: 40px !important;
+        height: 40px !important;
+    }
+}

@@ -16,13 +16,13 @@ export default defineConfig({
   },
 
   head: [
-    ['link', { rel: 'icon', href: '/logo.png' }],
+    ['link', { rel: 'icon', type: 'image/gif', href: '/logo.gif' }],
     ['meta', { name: 'theme-color', content: '#1e2024' }],
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }]
   ],
 
   themeConfig: {
-    logo: '/logo.png',
+    logo: '/logo.gif',
     siteTitle: 'Oh My Tidbits',
 
     nav: [

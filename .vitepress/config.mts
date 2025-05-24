@@ -79,7 +79,7 @@ export default defineConfig({
 
     footer: {
       message: 'Released under the MIT License.',
-      copyright: '© 2024 OhMyTidbits'
+      copyright: '© 2025 OhMyTidbits'
     },
 
     outline: {

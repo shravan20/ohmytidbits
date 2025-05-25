@@ -5,6 +5,7 @@ Modern JavaScript patterns, ES6+ features, and best practices.
 ## ES6+ Features
 
 ### Arrow Functions
+
 ```javascript
 // Traditional function
 function add(a, b) {
@@ -22,6 +23,7 @@ const processData = (data) => {
 ```
 
 ### Destructuring
+
 ```javascript
 // Array destructuring
 const [first, second, ...rest] = [1, 2, 3, 4, 5];
@@ -34,6 +36,7 @@ const greet = ({ name, age }) => `Hello ${name}, you are ${age} years old`;
 ```
 
 ### Template Literals
+
 ```javascript
 const name = 'John';
 const age = 30;
@@ -49,6 +52,7 @@ const message = `
 ## Async/Await Patterns
 
 ### Basic Usage
+
 ```javascript
 // Async function
 async function fetchUserData(userId) {
@@ -64,6 +68,7 @@ async function fetchUserData(userId) {
 ```
 
 ### Parallel Execution
+
 ```javascript
 // Sequential (slower)
 const user = await fetchUser(id);
@@ -79,6 +84,7 @@ const [user, posts] = await Promise.all([
 ## Modern Array Methods
 
 ### Map, Filter, Reduce
+
 ```javascript
 const numbers = [1, 2, 3, 4, 5];
 
@@ -109,6 +115,7 @@ const result = numbers
 ## Common Patterns
 
 ### Module Pattern
+
 ```javascript
 // ES6 modules
 export const utils = {
@@ -129,6 +136,7 @@ export default class ApiClient {
 ```
 
 ### Error Handling
+
 ```javascript
 // Custom error classes
 class ValidationError extends Error {

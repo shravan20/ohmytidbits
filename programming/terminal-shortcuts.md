@@ -5,6 +5,7 @@ Essential terminal shortcuts and commands for efficient development workflow.
 ## Navigation Shortcuts
 
 ### Cursor Movement
+
 - `Ctrl + A` - Move to beginning of line
 - `Ctrl + E` - Move to end of line
 - `Ctrl + F` - Move forward one character
@@ -13,6 +14,7 @@ Essential terminal shortcuts and commands for efficient development workflow.
 - `Alt + B` - Move backward one word
 
 ### Line Editing
+
 - `Ctrl + K` - Delete from cursor to end of line
 - `Ctrl + U` - Delete from cursor to beginning of line
 - `Ctrl + W` - Delete word before cursor
@@ -23,6 +25,7 @@ Essential terminal shortcuts and commands for efficient development workflow.
 ## Process Control
 
 ### Job Control
+
 - `Ctrl + C` - Terminate current process
 - `Ctrl + Z` - Suspend current process
 - `Ctrl + D` - Exit current shell/EOF
@@ -31,6 +34,7 @@ Essential terminal shortcuts and commands for efficient development workflow.
 - `Ctrl + Q` - Resume output
 
 ### Background Jobs
+
 ```bash
 # Run command in background
 command &
@@ -51,6 +55,7 @@ kill %1
 ## History Navigation
 
 ### Command History
+
 - `Ctrl + R` - Reverse search through history
 - `Ctrl + P` - Previous command (↑)
 - `Ctrl + N` - Next command (↓)
@@ -59,6 +64,7 @@ kill %1
 - `!string` - Repeat last command starting with string
 
 ### History Commands
+
 ```bash
 # Show command history
 history
@@ -79,6 +85,7 @@ history | grep "search_term"
 ## File Operations
 
 ### Basic File Commands
+
 ```bash
 # List files
 ls -la                    # Detailed list
@@ -101,6 +108,7 @@ mkdir -p path/to/dir     # Create directory with parents
 ```
 
 ### File Permissions
+
 ```bash
 # Change permissions
 chmod 755 file           # rwxr-xr-x
@@ -115,6 +123,7 @@ chown -R user:group dir  # Recursive
 ## Text Processing
 
 ### Viewing Files
+
 ```bash
 # View file contents
 cat file                 # Display entire file
@@ -126,6 +135,7 @@ tail -n 20 file          # Last 20 lines
 ```
 
 ### Text Manipulation
+
 ```bash
 # Search in files
 grep "pattern" file      # Search for pattern
@@ -146,6 +156,7 @@ sed 's/old/new/g' file  # Replace text
 ## Network Commands
 
 ### Network Utilities
+
 ```bash
 # Check connectivity
 ping google.com          # Test connectivity
@@ -164,6 +175,7 @@ kill -9 PID             # Force kill process
 ## System Information
 
 ### System Monitoring
+
 ```bash
 # System info
 top                      # Running processes
@@ -178,6 +190,7 @@ id                       # User and group IDs
 ```
 
 ### Environment
+
 ```bash
 # Environment variables
 env                      # Show all variables
@@ -194,6 +207,7 @@ type command             # Show command type
 ## Git Shortcuts
 
 ### Quick Git Commands
+
 ```bash
 # Git aliases (add to ~/.gitconfig)
 git config --global alias.st status
@@ -212,6 +226,7 @@ git merge --no-ff feature-branch
 ## Package Managers
 
 ### Node.js (npm/yarn)
+
 ```bash
 # npm shortcuts
 npm i                    # Install dependencies
@@ -230,6 +245,7 @@ yarn run script          # Run script
 ```
 
 ### System Package Managers
+
 ```bash
 # macOS (Homebrew)
 brew install package     # Install package
@@ -248,6 +264,7 @@ apt list --installed     # List installed packages
 ## Zsh Specific Features
 
 ### Zsh Navigation
+
 ```bash
 # Directory shortcuts
 ..                       # cd ..
@@ -261,6 +278,7 @@ npm run <TAB>            # Complete npm scripts
 ```
 
 ### Zsh Plugins (Oh My Zsh)
+
 ```bash
 # Git plugin shortcuts
 gst                      # git status
@@ -275,6 +293,7 @@ gcb                      # git checkout -b
 ## Custom Aliases
 
 ### Useful Aliases (~/.zshrc or ~/.bashrc)
+
 ```bash
 # Navigation
 alias ..="cd .."
@@ -310,6 +329,7 @@ alias dex="docker exec -it"
 ## Functions
 
 ### Useful Shell Functions
+
 ```bash
 # Create directory and cd into it
 mkcd() {
@@ -352,6 +372,7 @@ backup() {
 ## Terminal Multiplexers
 
 ### tmux Shortcuts
+
 ```bash
 # Session management
 tmux new -s session_name # Create new session
@@ -373,6 +394,7 @@ Ctrl+b x                 # Kill pane
 ```
 
 ### screen Shortcuts
+
 ```bash
 # Basic commands
 screen                   # Start new session
@@ -390,6 +412,7 @@ Ctrl+a d                 # Detach session
 ## Performance and Monitoring
 
 ### System Performance
+
 ```bash
 # CPU and memory
 top                      # Process monitor
@@ -405,6 +428,7 @@ ncdu                     # Interactive disk usage
 ```
 
 ### Network Monitoring
+
 ```bash
 # Network activity
 netstat -i               # Network interfaces
@@ -416,6 +440,7 @@ nload                    # Network load monitor
 ## Tips and Best Practices
 
 ### Productivity Tips
+
 1. Use tab completion extensively
 2. Learn and customize your shell (zsh/bash)
 3. Set up useful aliases for common commands
@@ -426,6 +451,7 @@ nload                    # Network load monitor
 8. Keep your dotfiles in version control
 
 ### Security Best Practices
+
 1. Use SSH keys instead of passwords
 2. Regularly update your system and packages
 3. Be careful with sudo commands

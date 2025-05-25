@@ -5,16 +5,19 @@ Welcome to the programming section of my knowledge wiki. Here you'll find techni
 ## Languages & Technologies
 
 ### Frontend
+
 - [JavaScript](./javascript.md) - Modern JS patterns and ES6+ features
 - [TypeScript](./typescript.md) - Type safety and advanced TypeScript concepts
 - [Web Development](./web-dev.md) - HTML, CSS, and modern web practices
 
 ### Backend
+
 - [Node.js](./nodejs.md) - Server-side JavaScript development
 - APIs and microservices
 - Database design and optimization
 
 ### Tools & Frameworks
+
 - Version control with Git
 - Build tools and bundlers
 - Testing frameworks and strategies

@@ -5,6 +5,7 @@ Modern web development practices, HTML, CSS, and frontend technologies.
 ## HTML Best Practices
 
 ### Semantic HTML
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -38,6 +39,7 @@ Modern web development practices, HTML, CSS, and frontend technologies.
 ```
 
 ### Accessibility
+
 ```html
 <!-- ARIA labels -->
 <button aria-label="Close dialog">×</button>
@@ -56,6 +58,7 @@ Modern web development practices, HTML, CSS, and frontend technologies.
 ## CSS Modern Techniques
 
 ### CSS Grid
+
 ```css
 .grid-container {
   display: grid;
@@ -72,6 +75,7 @@ Modern web development practices, HTML, CSS, and frontend technologies.
 ```
 
 ### Flexbox
+
 ```css
 .flex-container {
   display: flex;
@@ -87,6 +91,7 @@ Modern web development practices, HTML, CSS, and frontend technologies.
 ```
 
 ### CSS Custom Properties
+
 ```css
 :root {
   --primary-color: #007bff;
@@ -105,6 +110,7 @@ Modern web development practices, HTML, CSS, and frontend technologies.
 ## Responsive Design
 
 ### Mobile-First Approach
+
 ```css
 /* Base styles for mobile */
 .container {
@@ -130,6 +136,7 @@ Modern web development practices, HTML, CSS, and frontend technologies.
 ```
 
 ### Container Queries
+
 ```css
 .card-container {
   container-type: inline-size;
@@ -146,6 +153,7 @@ Modern web development practices, HTML, CSS, and frontend technologies.
 ## Modern JavaScript for Web
 
 ### DOM Manipulation
+
 ```javascript
 // Modern DOM selection
 const elements = document.querySelectorAll('.item');
@@ -173,6 +181,7 @@ document.querySelectorAll('.lazy-load').forEach(el => {
 ```
 
 ### Fetch API
+
 ```javascript
 // GET request
 async function fetchData(url) {
@@ -204,6 +213,7 @@ async function postData(url, data) {
 ## Performance Optimization
 
 ### Critical CSS
+
 ```html
 <!-- Inline critical CSS -->
 <style>
@@ -217,6 +227,7 @@ async function postData(url, data) {
 ```
 
 ### Image Optimization
+
 ```html
 <!-- Responsive images -->
 <picture>
@@ -235,6 +246,7 @@ async function postData(url, data) {
 ## Build Tools
 
 ### Vite Configuration
+
 ```javascript
 // vite.config.js
 import { defineConfig } from 'vite';
@@ -262,18 +274,21 @@ export default defineConfig({
 ## Best Practices
 
 ### HTML
+
 - Use semantic elements
 - Include proper meta tags
 - Optimize for accessibility
 - Validate markup
 
 ### CSS
+
 - Use mobile-first responsive design
 - Implement CSS custom properties
 - Follow BEM naming convention
 - Optimize for performance
 
 ### JavaScript
+
 - Use modern ES6+ features
 - Implement proper error handling
 - Optimize bundle size

@@ -5,6 +5,7 @@ TypeScript adds static type checking to JavaScript, helping catch errors early a
 ## Basic Types
 
 ### Primitive Types
+
 ```typescript
 // Basic types
 let name: string = "John";
@@ -21,6 +22,7 @@ let person: [string, number] = ["John", 30];
 ```
 
 ### Object Types
+
 ```typescript
 // Interface
 interface User {
@@ -40,6 +42,7 @@ type Handler = (event: Event) => void;
 ## Advanced Types
 
 ### Generics
+
 ```typescript
 // Generic function
 function identity<T>(arg: T): T {
@@ -64,6 +67,7 @@ function loggingIdentity<T extends Lengthwise>(arg: T): T {
 ```
 
 ### Utility Types
+
 ```typescript
 // Partial - makes all properties optional
 interface User {
@@ -87,6 +91,7 @@ type UserRoles = Record<string, 'admin' | 'user' | 'guest'>;
 ## Configuration
 
 ### tsconfig.json
+
 ```json
 {
   "compilerOptions": {

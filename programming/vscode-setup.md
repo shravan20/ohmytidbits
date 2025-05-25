@@ -5,6 +5,7 @@ Complete guide to setting up VS Code for optimal development experience.
 ## Essential Extensions
 
 ### Core Development
+
 - **Prettier - Code formatter** - Automatic code formatting
 - **ESLint** - JavaScript/TypeScript linting
 - **GitLens** - Enhanced Git capabilities
@@ -13,6 +14,7 @@ Complete guide to setting up VS Code for optimal development experience.
 - **indent-rainbow** - Colorize indentation levels
 
 ### Language Support
+
 - **TypeScript Hero** - Additional TypeScript functionality
 - **ES7+ React/Redux/React-Native snippets** - React code snippets
 - **Python** - Python language support
@@ -20,6 +22,7 @@ Complete guide to setting up VS Code for optimal development experience.
 - **Rust** - Rust language support
 
 ### Productivity
+
 - **Live Server** - Local development server with live reload
 - **REST Client** - Test REST APIs directly in VS Code
 - **Thunder Client** - Lightweight REST API client
@@ -27,6 +30,7 @@ Complete guide to setting up VS Code for optimal development experience.
 - **Better Comments** - Improve comment highlighting
 
 ### Themes & UI
+
 - **One Dark Pro** - Popular dark theme
 - **Material Icon Theme** - Beautiful file icons
 - **Dracula Official** - Dracula theme
@@ -35,6 +39,7 @@ Complete guide to setting up VS Code for optimal development experience.
 ## Settings Configuration
 
 ### User Settings (settings.json)
+
 ```json
 {
   // Editor
@@ -117,6 +122,7 @@ Complete guide to setting up VS Code for optimal development experience.
 ## Keyboard Shortcuts
 
 ### Custom Keybindings (keybindings.json)
+
 ```json
 [
   {
@@ -147,6 +153,7 @@ Complete guide to setting up VS Code for optimal development experience.
 ```
 
 ### Essential Shortcuts
+
 - `Cmd/Ctrl + P` - Quick file open
 - `Cmd/Ctrl + Shift + P` - Command palette
 - `Cmd/Ctrl + Shift + F` - Search across files
@@ -161,6 +168,7 @@ Complete guide to setting up VS Code for optimal development experience.
 ## Workspace Configuration
 
 ### .vscode/settings.json (Project-specific)
+
 ```json
 {
   "typescript.preferences.importModuleSpecifier": "relative",
@@ -179,6 +187,7 @@ Complete guide to setting up VS Code for optimal development experience.
 ```
 
 ### .vscode/extensions.json (Recommended Extensions)
+
 ```json
 {
   "recommendations": [
@@ -196,6 +205,7 @@ Complete guide to setting up VS Code for optimal development experience.
 ## Snippets
 
 ### Custom JavaScript/TypeScript Snippets
+
 ```json
 {
   "React Functional Component": {
@@ -242,6 +252,7 @@ Complete guide to setting up VS Code for optimal development experience.
 ## Debugging Configuration
 
 ### .vscode/launch.json
+
 ```json
 {
   "version": "0.2.0",
@@ -279,6 +290,7 @@ Complete guide to setting up VS Code for optimal development experience.
 ## Tasks Configuration
 
 ### .vscode/tasks.json
+
 ```json
 {
   "version": "2.0.0",
@@ -323,6 +335,7 @@ Complete guide to setting up VS Code for optimal development experience.
 ## Font Recommendations
 
 ### Programming Fonts
+
 - **Fira Code** - Popular font with ligatures
 - **Cascadia Code** - Microsoft's programming font
 - **JetBrains Mono** - Font designed for developers
@@ -330,6 +343,7 @@ Complete guide to setting up VS Code for optimal development experience.
 - **Inconsolata** - Humanist monospaced font
 
 ### Font Installation (macOS)
+
 ```bash
 # Install Fira Code via Homebrew
 brew tap homebrew/cask-fonts
@@ -342,6 +356,7 @@ brew install --cask font-jetbrains-mono
 ## Performance Optimization
 
 ### Settings for Better Performance
+
 ```json
 {
   "files.watcherExclude": {
@@ -369,6 +384,7 @@ brew install --cask font-jetbrains-mono
 ## Multi-root Workspaces
 
 ### workspace.code-workspace
+
 ```json
 {
   "folders": [
@@ -400,6 +416,7 @@ brew install --cask font-jetbrains-mono
 ## Useful Commands
 
 ### Command Palette Commands
+
 - `Developer: Reload Window` - Reload VS Code window
 - `Preferences: Open Settings (JSON)` - Open settings file
 - `Preferences: Open Keyboard Shortcuts (JSON)` - Open keybindings
@@ -411,6 +428,7 @@ brew install --cask font-jetbrains-mono
 ## Troubleshooting
 
 ### Common Issues
+
 ```bash
 # Reset VS Code settings
 rm -rf ~/Library/Application\ Support/Code/User/settings.json
@@ -426,6 +444,7 @@ rm -rf .vscode/
 ```
 
 ### Performance Issues
+
 - Disable unused extensions
 - Exclude large directories from file watcher
 - Reduce number of open editors
@@ -435,6 +454,7 @@ rm -rf .vscode/
 ## Tips and Tricks
 
 ### Productivity Tips
+
 1. Use Zen Mode (`Cmd/Ctrl + K Z`) for distraction-free coding
 2. Split editor (`Cmd/Ctrl + \`) for side-by-side editing
 3. Use breadcrumbs for navigation
@@ -445,6 +465,7 @@ rm -rf .vscode/
 8. Customize status bar for relevant information
 
 ### Hidden Features
+
 - `Cmd/Ctrl + Shift + E` - Focus on Explorer
 - `Cmd/Ctrl + Shift + G` - Focus on Source Control
 - `Cmd/Ctrl + Shift + D` - Focus on Debug

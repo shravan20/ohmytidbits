@@ -5,16 +5,19 @@ This section contains my personal notes from various learning sources including 
 ## Categories
 
 ### 📅 Daily Notes
+
 - [Today I Learned](./daily.md) - Quick insights and discoveries
 - Weekly reflections and progress updates
 - Problem-solving notes and solutions
 
 ### 📖 Book Notes
+
 - [Technical Books](./books.md) - Programming and technology books
 - Business and productivity books
 - Key takeaways and actionable insights
 
 ### 🎓 Course Notes
+
 - [Online Courses](./courses.md) - Structured learning materials
 - Workshop and conference notes
 - Certification study guides
@@ -28,6 +31,7 @@ This section contains my personal notes from various learning sources including 
 ## Note-Taking System
 
 I use a combination of:
+
 - **Zettelkasten method** for connecting ideas
 - **Cornell notes** for structured learning
 - **Mind maps** for complex topics
@@ -36,6 +40,7 @@ I use a combination of:
 ## Tags and Categories
 
 Notes are organized using tags like:
+
 - `#javascript` `#react` `#nodejs` - Technology-specific
 - `#patterns` `#architecture` - Design concepts
 - `#productivity` `#tools` - Workflow improvements

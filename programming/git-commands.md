@@ -5,6 +5,7 @@ Essential Git commands for daily development workflow.
 ## Basic Commands
 
 ### Repository Setup
+
 ```bash
 # Initialize new repository
 git init
@@ -17,6 +18,7 @@ git remote add origin <repository-url>
 ```
 
 ### Daily Workflow
+
 ```bash
 # Check status
 git status
@@ -38,6 +40,7 @@ git push -u origin main      # Set upstream and push
 ## Branching
 
 ### Branch Management
+
 ```bash
 # List branches
 git branch                   # Local branches
@@ -58,6 +61,7 @@ git branch -D feature-name   # Force delete
 ```
 
 ### Merging
+
 ```bash
 # Merge branch into current branch
 git merge feature-name
@@ -72,6 +76,7 @@ git merge --abort
 ## History and Logs
 
 ### Viewing History
+
 ```bash
 # View commit history
 git log
@@ -93,6 +98,7 @@ git diff HEAD~1             # Compare with previous commit
 ## Undoing Changes
 
 ### Working Directory
+
 ```bash
 # Discard changes in working directory
 git checkout -- <filename>
@@ -104,6 +110,7 @@ git restore .
 ```
 
 ### Staging Area
+
 ```bash
 # Unstage files
 git reset HEAD <filename>
@@ -114,6 +121,7 @@ git reset HEAD
 ```
 
 ### Commits
+
 ```bash
 # Amend last commit
 git commit --amend -m "New message"
@@ -131,6 +139,7 @@ git revert <commit-hash>
 ## Remote Operations
 
 ### Fetching and Pulling
+
 ```bash
 # Fetch changes from remote
 git fetch origin
@@ -143,6 +152,7 @@ git pull --rebase origin main
 ```
 
 ### Pushing
+
 ```bash
 # Push to remote
 git push origin main
@@ -157,6 +167,7 @@ git push -u origin feature-name
 ## Stashing
 
 ### Basic Stashing
+
 ```bash
 # Stash current changes
 git stash
@@ -179,6 +190,7 @@ git stash drop stash@{0}
 ## Rebasing
 
 ### Interactive Rebase
+
 ```bash
 # Rebase last 3 commits
 git rebase -i HEAD~3
@@ -196,6 +208,7 @@ git rebase --abort
 ## Configuration
 
 ### Global Configuration
+
 ```bash
 # Set user information
 git config --global user.name "Your Name"
@@ -212,6 +225,7 @@ git config --list
 ```
 
 ### Useful Aliases
+
 ```bash
 # Add aliases
 git config --global alias.st status
@@ -226,6 +240,7 @@ git config --global alias.visual '!gitk'
 ## Advanced Commands
 
 ### Cherry Picking
+
 ```bash
 # Apply specific commit to current branch
 git cherry-pick <commit-hash>
@@ -235,6 +250,7 @@ git cherry-pick --no-commit <commit-hash>
 ```
 
 ### Bisect (Finding Bugs)
+
 ```bash
 # Start bisect
 git bisect start
@@ -250,6 +266,7 @@ git bisect reset
 ```
 
 ### Worktree
+
 ```bash
 # Create new worktree
 git worktree add ../feature-branch feature-name
@@ -264,6 +281,7 @@ git worktree remove ../feature-branch
 ## Troubleshooting
 
 ### Common Issues
+
 ```bash
 # Fix "detached HEAD"
 git checkout main
@@ -283,6 +301,7 @@ git config core.autocrlf input   # Mac/Linux
 ```
 
 ### Conflict Resolution
+
 ```bash
 # During merge conflicts
 git status                  # See conflicted files
@@ -300,6 +319,7 @@ git mergetool
 ## Git Flow Commands
 
 ### Feature Development
+
 ```bash
 # Start feature
 git checkout -b feature/new-feature main
@@ -316,6 +336,7 @@ git push origin main
 ```
 
 ### Hotfix
+
 ```bash
 # Start hotfix
 git checkout -b hotfix/critical-fix main
@@ -334,18 +355,21 @@ git branch -d hotfix/critical-fix
 ## Best Practices
 
 ### Commit Messages
+
 - Use imperative mood: "Add feature" not "Added feature"
 - Keep first line under 50 characters
 - Use body to explain what and why, not how
 - Reference issues: "Fixes #123"
 
 ### Branching Strategy
+
 - Use descriptive branch names: `feature/user-authentication`
 - Keep branches short-lived
 - Regularly sync with main branch
 - Delete merged branches
 
 ### General Tips
+
 - Commit often, push regularly
 - Write meaningful commit messages
 - Use `.gitignore` for generated files
@@ -355,6 +379,7 @@ git branch -d hotfix/critical-fix
 ## Useful Git Hooks
 
 ### Pre-commit Hook
+
 ```bash
 #!/bin/sh
 # Run tests before commit
@@ -366,6 +391,7 @@ fi
 ```
 
 ### Pre-push Hook
+
 ```bash
 #!/bin/sh
 # Run linting before push

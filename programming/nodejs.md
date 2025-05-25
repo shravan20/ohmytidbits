@@ -5,6 +5,7 @@ Server-side JavaScript development with Node.js, including best practices and co
 ## Getting Started
 
 ### Basic Server
+
 ```javascript
 const http = require('http');
 
@@ -19,6 +20,7 @@ server.listen(3000, () => {
 ```
 
 ### Express.js Setup
+
 ```javascript
 const express = require('express');
 const app = express();
@@ -40,6 +42,7 @@ app.listen(3000, () => {
 ## File System Operations
 
 ### Reading Files
+
 ```javascript
 const fs = require('fs').promises;
 const path = require('path');
@@ -75,6 +78,7 @@ async function processLargeFile(filename) {
 ## Environment Configuration
 
 ### Environment Variables
+
 ```javascript
 // .env file
 PORT=3000
@@ -94,6 +98,7 @@ const config = {
 ## Error Handling
 
 ### Global Error Handler
+
 ```javascript
 // Express error middleware
 app.use((err, req, res, next) => {
@@ -116,6 +121,7 @@ process.on('unhandledRejection', (reason, promise) => {
 ## Database Integration
 
 ### MongoDB with Mongoose
+
 ```javascript
 const mongoose = require('mongoose');
 
@@ -142,6 +148,7 @@ async function findUsers(query = {}) {
 ## Testing
 
 ### Jest Setup
+
 ```javascript
 // user.test.js
 const request = require('supertest');

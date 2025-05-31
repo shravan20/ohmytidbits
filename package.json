@@ -7,10 +7,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "generate": "node scripts/fetch-blogs.js",
-    "metrics": "node scripts/compute-metrics.js",
     "docs:preview": "vitepress preview",
     "docs:dev": "vitepress dev .",
-    "docs:build": "npm run generate && npm run metrics && NODE_ENV=production vitepress build .",
+    "docs:build": "npm run generate && NODE_ENV=production vitepress build .",
     "docs:build-local": "vitepress build .",
     "docs:serve": "vitepress serve .vitepress/dist"
   },
@@ -31,11 +30,7 @@
   "dependencies": {
     "@algolia/autocomplete-js": "^1.19.2",
     "algoliasearch": "^5.25.0",
-    "dayjs": "^1.11.13",
-    "fast-glob": "^3.3.3",
-    "gray-matter": "^4.0.3",
     "lucide-vue-next": "^0.511.0",
-    "node-fetch": "^3.3.2",
-    "reading-time": "^1.5.0"
+    "node-fetch": "^3.3.2"
   }
 }

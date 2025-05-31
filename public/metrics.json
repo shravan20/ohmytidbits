@@ -1,0 +1,16 @@
+{
+  "totalNotes": 31,
+  "notesThisWeek": 23,
+  "notesThisMonth": 31,
+  "favorites": 1,
+  "readingTimeHrs": 2.5,
+  "totalTags": 17,
+  "totalWords": 30312,
+  "avgNoteLengthWords": 978,
+  "lastUpdated": "2025-05-31T01:24:26.030Z",
+  "totalBacklinks": 12,
+  "longestNote": {
+    "slug": "reflecting-on-my-voyage-as-an-intern-to-a-developer",
+    "wordCount": 3009
+  }
+}

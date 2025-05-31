@@ -30,7 +30,11 @@
   "dependencies": {
     "@algolia/autocomplete-js": "^1.19.2",
     "algoliasearch": "^5.25.0",
+    "dayjs": "^1.11.13",
+    "fast-glob": "^3.3.3",
+    "gray-matter": "^4.0.3",
     "lucide-vue-next": "^0.511.0",
-    "node-fetch": "^3.3.2"
+    "node-fetch": "^3.3.2",
+    "reading-time": "^1.5.0"
   }
 }

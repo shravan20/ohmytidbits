@@ -10,20 +10,21 @@ hero:
       link: /how-to-use
     - theme: secondary
       text: View on GitHub
-      link: https://github.com/shravan20/personal-wiki
+      link: https://github.com/shravan20/ohmytidbits
 
-features:
-  - title: 📘 Deep Dives
-    details: Structured guides on programming, data science, & more.
-  - title: ✏️ Daily Notes
-    details: Bite-sized takeaways from books, courses, and articles.
-  - title: 🔧 Toolkits
-    details: Ready-to-use snippets, configs, and resources.
-  - title: 🎯 Quick Reference
-    details: Handy commands, patterns, and best practices.
-
+# features:
+#   - title: 📘 Deep Dives
+#     details: Structured guides on programming, data science, & more.
+#   - title: ✏️ Daily Notes
+#     details: Bite-sized takeaways from books, courses, and articles.
+#   - title: 🔧 Toolkits
+#     details: Ready-to-use snippets, configs, and resources.
+#   - title: 🎯 Quick Reference
+#     details: Handy commands, patterns, and best practices.
 
 ---
+
+<StatsCards />
 
 ## Hello there 👋
 
@@ -32,11 +33,11 @@ Welcome to my living knowledge base - a space for every idea & discovery I make 
 **Oh My Tidbits** is a public workspace for ideas in progress; a living digital garden of interlinked notes.  
 
 I see writing as a way to think; each note helps me untangle ideas, ignite fresh connections, and deepen my understanding.
-So each tidbit evolves over time as concepts are tested, challenged, and refined. You’ll find a living web of linked tidbits here, each unfolding at its own pace. Don’t mind the occasional misstep, garden grows strongest by questioning assumptions and refining mental models
+So each tidbit evolves over time as concepts are tested, challenged, and refined. You'll find a living web of linked tidbits here, each unfolding at its own pace. Don't mind the occasional misstep, garden grows strongest by questioning assumptions and refining mental models
 
-- Jump in via the search bar (⌘ K)  
-- Browse by [category](/categories)  
-- Check the [how-to guide](/how-to-use) if you’re new here
+- Jump in via the search bar (⌘ K)
+- Browse by [category](/categories)
+- Check the [how-to guide](/how-to-use) if you're new here
 
 ## 🌟 Featured Reads
 

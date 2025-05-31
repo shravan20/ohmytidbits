@@ -1,5 +1,3 @@
-// File: scripts/computeMetrics.js
-// ---------------------------------
 // Reads every .md under the specified folders (blogs/, notes/, programming/, resources/,
 // plus any top‐level .md). Computes total word counts, reading time, favorites, tags, backlinks, etc.
 // Writes a single JSON to docs/.vitepress/metrics.json for your VitePress theme to import.

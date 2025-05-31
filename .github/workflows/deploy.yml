@@ -68,6 +68,10 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     needs: build
     runs-on: ubuntu-latest
+    if: >
+      github.event_name == 'push'
+      && github.ref == 'refs/heads/main'
+
     name: Deploy
     steps:
       - name: Deploy to GitHub Pages

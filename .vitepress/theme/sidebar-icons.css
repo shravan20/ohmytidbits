@@ -1,0 +1,113 @@
+/* VitePress Sidebar Icons with Font Awesome */
+
+/* Ensure Font Awesome is loaded */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+/* Target sidebar section titles directly */
+.VPSidebarItem .item .link .text {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Use CSS content selectors to target specific text */
+.VPSidebarItem .item .link .text:before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: var(--vp-c-brand);
+    font-size: 0.875rem;
+    width: 1rem;
+    text-align: center;
+}
+
+/* Getting Started - Rocket */
+.VPSidebarItem .item .link[href="/"] .text:before,
+.VPSidebarItem .item .link .text:contains("Getting Started"):before {
+    content: "\f135";
+}
+
+/* Programming - Code */
+.VPSidebarItem .item .link[href="/programming/"] .text:before,
+.VPSidebarItem .item .link .text:contains("Programming"):before {
+    content: "\f121";
+}
+
+/* Learning Notes - Book */
+.VPSidebarItem .item .link[href="/notes/"] .text:before,
+.VPSidebarItem .item .link .text:contains("Learning Notes"):before {
+    content: "\f02d";
+}
+
+/* Resources - Tools */
+.VPSidebarItem .item .link[href="/resources/"] .text:before,
+.VPSidebarItem .item .link .text:contains("Resources"):before {
+    content: "\f0ad";
+}
+
+/* Alternative approach using nth-child for reliability */
+.VPSidebarItem:nth-child(1) .item .link .text:before {
+    content: "\f135"; /* rocket */
+}
+
+.VPSidebarItem:nth-child(2) .item .link .text:before {
+    content: "\f121"; /* code */
+}
+
+.VPSidebarItem:nth-child(3) .item .link .text:before {
+    content: "\f02d"; /* book */
+}
+
+.VPSidebarItem:nth-child(4) .item .link .text:before {
+    content: "\f0ad"; /* wrench */
+}
+
+/* More specific selectors for VitePress structure */
+.VPSidebar .VPSidebarNav .VPSidebarItem:first-child .item .text:before {
+    content: "\f135" !important;
+}
+
+.VPSidebar .VPSidebarNav .VPSidebarItem:nth-child(2) .item .text:before {
+    content: "\f121" !important;
+}
+
+.VPSidebar .VPSidebarNav .VPSidebarItem:nth-child(3) .item .text:before {
+    content: "\f02d" !important;
+}
+
+.VPSidebar .VPSidebarNav .VPSidebarItem:nth-child(4) .item .text:before {
+    content: "\f0ad" !important;
+}
+
+/* Fallback using data attributes */
+[data-text="Getting Started"]:before {
+    content: "\f135";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: var(--vp-c-brand);
+    margin-right: 0.5rem;
+}
+
+[data-text="Programming"]:before {
+    content: "\f121";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: var(--vp-c-brand);
+    margin-right: 0.5rem;
+}
+
+[data-text="Learning Notes"]:before {
+    content: "\f02d";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: var(--vp-c-brand);
+    margin-right: 0.5rem;
+}
+
+[data-text="Resources"]:before {
+    content: "\f0ad";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: var(--vp-c-brand);
+    margin-right: 0.5rem;
+}

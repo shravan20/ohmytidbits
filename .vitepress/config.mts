@@ -18,7 +18,8 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', type: 'image/gif', href: '/logo.gif' }],
     ['meta', { name: 'theme-color', content: '#1e2024' }],
-    ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }]
+    ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
+    ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' }]
   ],
 
   themeConfig: {
@@ -36,16 +37,19 @@ export default defineConfig({
     ],
 
     sidebar: {
+
       '/': [
         {
-          text: 'Getting Started',
+          text: '<i class="fas fa-rocket"></i> Getting Started',
+          collapsed: false,
           items: [
             { text: 'Introduction', link: '/' },
             { text: 'How to Use', link: '/how-to-use' }
           ]
         },
         {
-          text: 'Programming',
+          text: '<i class="fas fa-code"></i> Programming',
+          collapsed: false,
           items: [
             { text: 'JavaScript', link: '/programming/javascript' },
             { text: 'TypeScript', link: '/programming/typescript' },
@@ -54,7 +58,8 @@ export default defineConfig({
           ]
         },
         {
-          text: 'Learning Notes',
+          text: '<i class="fas fa-book"></i> Learning Notes',
+          collapsed: false,
           items: [
             { text: 'Daily Notes', link: '/notes/daily' },
             { text: 'Book Notes', link: '/notes/books' },
@@ -62,7 +67,8 @@ export default defineConfig({
           ]
         },
         {
-          text: 'Resources',
+          text: '<i class="fas fa-wrench"></i> Resources',
+          collapsed: false,
           items: [
             { text: 'Tools', link: '/resources/tools' },
             { text: 'Links', link: '/resources/links' },

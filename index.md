@@ -12,15 +12,7 @@ hero:
       text: View on GitHub
       link: https://github.com/shravan20/ohmytidbits
 
-# features:
-#   - title: 📘 Deep Dives
-#     details: Structured guides on programming, data science, & more.
-#   - title: ✏️ Daily Notes
-#     details: Bite-sized takeaways from books, courses, and articles.
-#   - title: 🔧 Toolkits
-#     details: Ready-to-use snippets, configs, and resources.
-#   - title: 🎯 Quick Reference
-#     details: Handy commands, patterns, and best practices.
+favorite: true
 
 ---
 

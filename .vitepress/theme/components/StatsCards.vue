@@ -1,6 +1,6 @@
 <template>
   <div class="stats-grid">
-    <div v-for="card in cards" :key="card.title" class="stats-card">
+    <div v-for="card in cardsToShow" :key="card.title" class="stats-card">
       <div class="stats-icon-wrapper">
         <!-- render the imported Lucide component -->
         <component :is="card.icon" class="stats-icon" />
@@ -25,16 +25,107 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
-// pick whichever icons you like from Lucide
-import { BookOpen, BarChart2, Star, Clock } from "lucide-vue-next";
+import { computed } from "vue";
 
-const cards = ref([
-  { icon: BookOpen, title: "All Notes", value: "247", trend: "+8%" },
-  { icon: BarChart2, title: "New This Week", value: "12", trend: "-5%" },
-  { icon: Star, title: "Favorites", value: "34", trend: "+12%" },
-  { icon: Clock, title: "Reading Time", value: "2.3h", trend: null }
-]);
+// 1) Import the icons you want to use (Lucide icons):
+import {
+  BookOpen,
+  BarChart2,
+  Star,
+  Clock,
+  Tag,
+  CaseSensitive,
+  Link
+} from "lucide-vue-next";
+
+// 2) Import the JSON that was generated at build time.
+//    Adjust the path so it points to where metrics.json actually lives.
+//    If this component is in docs/.vitepress/theme/Layout.vue,
+//    then the JSON will be in the same folder, so:
+import metrics from "../../../public/metrics.json";
+
+// 3) Create a computed "cardsToShow" array that pulls values from `metrics`:
+const cardsToShow = computed(() => {
+  return [
+    {
+      icon: BookOpen,
+      title: "All Notes",
+      // use the number directly
+      value: metrics.totalNotes,
+      // (optionally) you can compute a trend string here.
+      // For example, if you stored last week's count in metrics, you could do:
+      // trend: metrics.allNotesTrend  (for now we’ll hard-code `null` or omit)
+      trend: null
+    },
+    //{
+    // icon: BarChart2,
+    // title: "New This Week",
+    //value: metrics.notesThisWeek,
+    // trend: null // or metrics.notesThisWeekTrend
+    //},
+    //{
+    //icon: Star,
+    //title: "Favorites",
+    //value: metrics.favorites,
+    //trend: null // or metrics.favoritesTrend
+    //},
+    {
+      icon: Clock,
+      title: "Reading Time",
+      // metrics.readingTimeHrs is already a decimal like 2.3
+      value: `${metrics.readingTimeHrs}h`,
+      trend: null
+    },
+    {
+      icon: Tag,
+      title: "Total Tags",
+      value: metrics.totalTags,
+      trend: null
+    },
+    //{
+    // icon: CaseSensitive,
+    //title: "Total Words",
+    //value: metrics.totalWords,
+    //trend: null
+    //},
+    {
+      icon: BarChart2,
+      title: "Avg Note Length",
+      value: `${metrics.avgNoteLengthWords} words`,
+      trend: null
+    },
+    {
+      icon: Link,
+      title: "Backlinks",
+      value: metrics.totalBacklinks,
+      trend: null
+    },
+    {
+      icon: Clock,
+      title: "Last Updated",
+      value: getTimeSince(metrics.lastUpdated),
+      trend: null
+    }
+    // {
+    //icon: BarChart2,
+    //title: "Longest Note",
+    // Show the slug plus word count
+    //value: `${metrics.longestNote.slug} (${metrics.longestNote.wordCount} words)`,
+    // trend: null
+    //}
+  ];
+});
+
+function getTimeSince(timestamp) {
+  const past = new Date(timestamp);
+  const now = new Date();
+  const diffMs = now - past;
+
+  const minutesAgo = Math.floor(diffMs / (1000 * 60));
+  const daysAgo = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+
+  return daysAgo > 0 ? `${daysAgo} day(s) ago` : `${minutesAgo} min(s) ago`;
+}
 </script>
 
 <style scoped>
@@ -80,7 +171,7 @@ const cards = ref([
 }
 
 .stats-value {
-  font-size: 1.75rem;
+  font-size: 1rem;
   font-weight: 600;
   color: var(--vp-c-text-1);
 }

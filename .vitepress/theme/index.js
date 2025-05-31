@@ -1,11 +1,11 @@
 import DefaultTheme from 'vitepress/theme'
+import StatsCards from './components/StatsCards.vue'
 import './vars.css'
-
 
 export default {
     ...DefaultTheme,
     Layout: DefaultTheme.Layout,
     enhanceApp({ app }) {
-        // register global components here
+        app.component('StatsCards', StatsCards)
     }
 }

@@ -48,6 +48,13 @@
     --vp-button-brand-active-border: var(--vp-c-brand-dark);
     --vp-button-brand-active-text: #f9f5d7;
     --vp-button-brand-active-bg: var(--vp-c-brand-dark);
+
+    /* Stats Card colors */
+    --stats-card-bg: var(--vp-c-bg-soft);
+    --stats-card-border: var(--vp-c-divider);
+    --stats-card-shadow: rgba(0, 0, 0, 0.1);
+    --stats-text-primary: var(--vp-c-text-1);
+    --stats-text-secondary: var(--vp-c-text-2);
 }
 
 /* Dark theme - Dark mode variant */

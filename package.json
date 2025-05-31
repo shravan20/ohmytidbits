@@ -30,6 +30,7 @@
   "dependencies": {
     "@algolia/autocomplete-js": "^1.19.2",
     "algoliasearch": "^5.25.0",
+    "lucide-vue-next": "^0.511.0",
     "node-fetch": "^3.3.2"
   }
 }

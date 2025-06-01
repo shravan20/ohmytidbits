@@ -6,10 +6,11 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "compute": "node scripts/compute-metrics.js",
     "generate": "node scripts/fetch-blogs.js",
     "docs:preview": "vitepress preview",
     "docs:dev": "vitepress dev .",
-    "docs:build": "npm run generate && NODE_ENV=production vitepress build .",
+    "docs:build": "npm run compute && npm run generate && NODE_ENV=production vitepress build .",
     "docs:build-local": "vitepress build .",
     "docs:serve": "vitepress serve .vitepress/dist"
   },

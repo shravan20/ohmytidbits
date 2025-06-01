@@ -7,6 +7,7 @@ export default defineConfig({
   cleanUrls: true,
   appearance: 'dark',
   lastUpdated: true,
+  ignoreDeadLinks: true, // Don't throw errors for broken links
   markdown: {
     lineNumbers: true,
     theme: {

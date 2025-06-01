@@ -7,16 +7,16 @@
 
 ## 🌱 About
 
-"Oh My Tidbits" is my digital garden - a personal knowledge base built with VitePress where I document my learning journey, programming knowledge, and useful resources. This project follows the concept of a personal wiki that grows organically as I continue to learn and explore.
+"Oh My Tidbits" is my digital garden - a personal knowledge base built with VitePress where I document my learning journey, knowledge, and useful resources. This project follows the concept of a personal wiki that grows organically as I continue to learn and explore.
 
 ## ✨ Features
 
-- **Knowledge Base**: Organized collection of programming notes and guides
-- **Code Snippets**: Useful code examples and patterns
+- **Knowledge Base**: Organized collection of general notes and guides
 - **Full-text Search**: Quickly find specific content
 - **Dark/Light Mode**: Toggle between themes for comfortable reading
 - **Responsive Design**: Optimized for desktop and mobile viewing
 - **Fast Performance**: Built with VitePress for optimal speed
+- **Code Snippets**: Useful code examples and patterns
 
 ## Getting Started
 
@@ -84,8 +84,8 @@ The site configuration can be modified in the `.vitepress/config.js` file. This 
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
----
+--------------------------------------
 
 Built with 📚 knowledge and ❤️ passion

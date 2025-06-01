@@ -2,7 +2,7 @@
 
 ---
 
-Copyright (c) 2025 [Shravan Kumar B](github.com/shravan20)
+[Shravan Kumar B](https://github.com/shravan20)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

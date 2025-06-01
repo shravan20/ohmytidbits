@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compute": "node scripts/compute-blogs.js",
+    "compute": "node scripts/compute-metrics.js",
     "generate": "node scripts/fetch-blogs.js",
     "docs:preview": "vitepress preview",
     "docs:dev": "vitepress dev .",

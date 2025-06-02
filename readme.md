@@ -1,4 +1,4 @@
-# Oh My Tidbits 📚
+# Oh My Tidbits 
 
 > A personal wiki for everything I learn and know
 
